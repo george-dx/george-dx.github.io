@@ -1,0 +1,35 @@
+name: Deploy site with Jekyll
+
+# Trigger on pushes to main (or your default branch)
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    permissions:
+      contents: read       # for checkout
+      pages: write         # to publish
+      id-token: write      # required by configure-pages
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Fetch your code
+      - uses: actions/checkout@v4
+
+      # 2. Set up Ruby (match your local dev version)
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'   # or whatever you installed via asdf
+
+      # 3. Install Bundler & gems
+      - run: gem install bundler
+      - run: bundle install
+
+      # 4. Build the Jekyll site (output in ./_site)
+      - run: bundle exec jekyll build --destination _site
+
+      # 5. Publish the _site folder to GH Pages
+      - uses: actions/deploy-pages@v1
+        with:
+          folder: _site
