@@ -1,35 +1,42 @@
-name: Deploy site with Jekyll
+# .github/workflows/pages.yml
+name: Deploy Jekyll site to GitHub Pages
 
-# Trigger on pushes to main (or your default branch)
 on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: read      # for checkout
+  pages: write        # to publish
+  id-token: write     # for configure-pages
+
 jobs:
   build-and-deploy:
-    permissions:
-      contents: read       # for checkout
-      pages: write         # to publish
-      id-token: write      # required by configure-pages
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Fetch your code
+      # 1. Checkout your code
       - uses: actions/checkout@v4
 
-      # 2. Set up Ruby (match your local dev version)
+      # 2. Set up Ruby (match your local version)
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'   # or whatever you installed via asdf
+          ruby-version: '3.2'    # or whatever version you chose
 
       # 3. Install Bundler & gems
       - run: gem install bundler
       - run: bundle install
 
-      # 4. Build the Jekyll site (output in ./_site)
+      # 4. Build the site into _site
       - run: bundle exec jekyll build --destination _site
 
-      # 5. Publish the _site folder to GH Pages
-      - uses: actions/deploy-pages@v1
+      # 5. Configure the Pages environment
+      - uses: actions/configure-pages@v3
+
+      # 6. Upload the generated site as an artifact
+      - uses: actions/upload-pages-artifact@v1
         with:
-          folder: _site
+          path: _site
+
+      # 7. Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v1
