@@ -1,4 +1,4 @@
-title: Long Haul
+title: George Daian
 description: Long Form Jekyll theme built with SASS
 
 url: https://long-haul.netlify.app
@@ -27,15 +27,15 @@ navigation:
       url: /contact
 
 social:
-    github: brianmaierjr
-    twitter: brianmaierjr
-    facebook: brianmaierjr
+    github: george-dx
+    twitter: george-dx
+    facebook: george-dx
     email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
+    linkedin: george-dx
     youtube: RickAstleyYT
     tumblr: i-am-a-fish
 
 google_analytics: "UA-58263416-1"
 
 disqus:
-    shortname: brianmaierjr
+    shortname: george-dx

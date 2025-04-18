@@ -1,10 +1,10 @@
-![preview Long Haul](/preview.jpg)
+![preview George Daian](/preview.jpg)
 
-Long Haul is a minimal jekyll theme built with SASS and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
+George Daian is a minimal jekyll theme built with SASS and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
 
-If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
+If you really enjoy George Daian and want to give me credit somewhere on the internet send or tweet out your experience with George Daian and tag me [@george-dx](https://twitter.com/george-dx).
 
-#### [View Demo](http://brianmaierjr.com/long-haul)
+#### [View Demo](http://george-dx.github.io/long-haul)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bd29f13b-3754-46d7-9a39-48db2e174b99/deploy-status)](https://app.netlify.com/sites/long-haul/deploys)
 
@@ -22,12 +22,12 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 -   Stylish Drop Cap on posts
 -   A Better Type Scale for all devices
 -   Comments powered by Disqus
--   [Dark Mode support](https://github.com/brianmaierjr/long-haul/blob/master/preview-dark.png) via [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+-   [Dark Mode support](https://github.com/george-dx/blob/master/preview-dark.png) via [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 
 ## Setup
 
 1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
+2. Fork the [George Daian repo](http://github.com/george-dx/long-haul)
 3. Clone it
 4. [Install Bundler](http://bundler.io/)
 5. Run `bundle install`
@@ -51,7 +51,7 @@ If you'd like your header to be larger then you can use the option below in you 
 
 -   **header:** large
 
-![preview Long Haul](/preview-large.png)
+![preview George Daian](/preview-large.png)
 
 ## To use on GitHub Pages
 
