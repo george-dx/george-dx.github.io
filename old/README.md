@@ -1,4 +1,4 @@
-![preview George Daian](/preview.jpg)
+![preview George Daian](/old/preview.jpg.jpg)
 
 George Daian is a minimal jekyll theme built with SASS and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
 
@@ -51,7 +51,7 @@ If you'd like your header to be larger then you can use the option below in you 
 
 -   **header:** large
 
-![preview George Daian](/preview-large.png)
+![preview George Daian](/old/preview-large.png.png)
 
 ## To use on GitHub Pages
 

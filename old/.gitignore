@@ -3,7 +3,7 @@ _site
 .DS_Store
 .ruby-version
 node_modules
-.jekyll-cache/
-.jekyll-cache/*
-_vendor
+old/.jekyll-cache/
+old/.jekyll-cache/*
+old/_vendor
 .idea
