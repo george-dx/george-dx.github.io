@@ -29,11 +29,22 @@
         margin: 0px;
       }
     </style>
-  </head>
+  <link rel="modulepreload" href="/blog-3f4f5f1e7b5dba7a.js" crossorigin="anonymous" integrity="sha384-DW+d3itUHZAVmcqM3Vs5oB8Gs543JGoRSOLhrahwUNCcUYsNMv09urSVHfn0d/Hq"><link rel="preload" href="/blog-3f4f5f1e7b5dba7a_bg.wasm" crossorigin="anonymous" integrity="sha384-oLhr5vwGJYvBiVJ6N8Ssc7pS2H5cqF56fohLrcgKLNyHmewT2n2Yncr3Q5AiMBiM" as="fetch" type="application/wasm"></head>
   <body>
     <script type="module">
       import init from "./pkg/ratzilla.js";
       init();
     </script>
-  </body>
+  
+<script type="module">
+import init, * as bindings from '/blog-3f4f5f1e7b5dba7a.js';
+const wasm = await init({ module_or_path: '/blog-3f4f5f1e7b5dba7a_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
 </html>
