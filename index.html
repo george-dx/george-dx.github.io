@@ -29,7 +29,7 @@
         margin: 0px;
       }
     </style>
-  <link rel="modulepreload" href="/blog-3f4f5f1e7b5dba7a.js" crossorigin="anonymous" integrity="sha384-DW+d3itUHZAVmcqM3Vs5oB8Gs543JGoRSOLhrahwUNCcUYsNMv09urSVHfn0d/Hq"><link rel="preload" href="/blog-3f4f5f1e7b5dba7a_bg.wasm" crossorigin="anonymous" integrity="sha384-oLhr5vwGJYvBiVJ6N8Ssc7pS2H5cqF56fohLrcgKLNyHmewT2n2Yncr3Q5AiMBiM" as="fetch" type="application/wasm"><link rel="modulepreload" href="/blog-286c67a0da611e13.js" crossorigin="anonymous" integrity="sha384-2I55orER3wCdGSJi+58I77Zb+T81dsknvwKROHc5ngJjA3vQuFrFoZyY800cIt+g"><link rel="preload" href="/blog-286c67a0da611e13_bg.wasm" crossorigin="anonymous" integrity="sha384-hU55oM3ONAIw2yp9s/MWiN3Tkg2elBM1AU4C8A5+CBzC8w2Nsp/2zC0RqLYLgBod" as="fetch" type="application/wasm"></head>
+  <link rel="modulepreload" href="/blog-3f4f5f1e7b5dba7a.js" crossorigin="anonymous" integrity="sha384-DW+d3itUHZAVmcqM3Vs5oB8Gs543JGoRSOLhrahwUNCcUYsNMv09urSVHfn0d/Hq"><link rel="preload" href="/blog-3f4f5f1e7b5dba7a_bg.wasm" crossorigin="anonymous" integrity="sha384-oLhr5vwGJYvBiVJ6N8Ssc7pS2H5cqF56fohLrcgKLNyHmewT2n2Yncr3Q5AiMBiM" as="fetch" type="application/wasm"><link rel="modulepreload" href="/blog-286c67a0da611e13.js" crossorigin="anonymous" integrity="sha384-2I55orER3wCdGSJi+58I77Zb+T81dsknvwKROHc5ngJjA3vQuFrFoZyY800cIt+g"><link rel="preload" href="/blog-286c67a0da611e13_bg.wasm" crossorigin="anonymous" integrity="sha384-hU55oM3ONAIw2yp9s/MWiN3Tkg2elBM1AU4C8A5+CBzC8w2Nsp/2zC0RqLYLgBod" as="fetch" type="application/wasm"><link rel="modulepreload" href="/blog-abf3a56a42fdf3e2.js" crossorigin="anonymous" integrity="sha384-DKob02wq+H0N+LN+3MaBvtJO475i8GRT+ah+Bdyn/gsSIHazv6jze7NEFm76f5nG"><link rel="preload" href="/blog-abf3a56a42fdf3e2_bg.wasm" crossorigin="anonymous" integrity="sha384-SZ6iQpJAKT3l9M6A3Ek4D/D263REI7fCGOGqnCgKTuzL2eGn3wCOaPaYUz2s7xpd" as="fetch" type="application/wasm"></head>
   <body>
     <script type="module">
       import init from "./pkg/ratzilla.js";
@@ -48,7 +48,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
 <script type="module">
-import init, * as bindings from '/Users/georgedaian/Documents/ruag-all-projects/george-dx.github.io/blog-286c67a0da611e13.js';
+import init, * as bindings from './blog-286c67a0da611e13.js';
 const wasm = await init({ module_or_path: '/blog-286c67a0da611e13_bg.wasm' });
 
 
@@ -186,5 +186,16 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     new Client(url).start();
 
 })()
+</script>
+<script type="module">
+import init, * as bindings from '/blog-abf3a56a42fdf3e2.js';
+const wasm = await init({ module_or_path: '/blog-abf3a56a42fdf3e2_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
 </script></body>
 </html>
