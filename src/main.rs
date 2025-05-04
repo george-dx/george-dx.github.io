@@ -64,7 +64,7 @@ impl App {
             }
             KeyCode::Right => {
                 let mut ct = self.current_tab.borrow_mut();
-                *ct = (*ct + 1) % self.tabs.len();
+                *ct = if *ct == self.tabs.len() - 1 { 0 } else { *ct + 1 };
             }
             KeyCode::Up => {
                 let mut s = self.scroll.borrow_mut();
